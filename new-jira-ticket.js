@@ -4,8 +4,6 @@ class NewJiraTicket {
             return;
         }        
 
-        this.dialog = null;
-
         this.listenForNewIssueDialog();
     }
     
@@ -19,16 +17,14 @@ class NewJiraTicket {
                 return;
             }
 
-            this.textarea = textarea;
-            this.dialog = createIssueDialog;
-            this.setTextareaContent();
+            this.setTextareaContent(textarea);
         });
 
         observer.observe(document.body, { subtree: true, childList: true });
     }
 
-    setTextareaContent() {
-        this.textarea.value = `Put a description here.
+    setTextareaContent(textarea) {
+        textarea.value = `Put a description here.
 
 h2. Pipeline
 To come!
