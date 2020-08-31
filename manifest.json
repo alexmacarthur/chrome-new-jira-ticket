@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "New Jira Ticket",
+    "author": "Alex MacArthur",
+    "description": "Stubs some basic things into a new Jira ticket.",
+    "version": "0.0.1",
+    "default_locale": "en",
+    "icons": {},
+    "content_scripts": [
+        {
+            "js": [
+                "new-jira-ticket.js"
+            ],
+            "matches": [
+                "<all_urls>"
+            ],
+            "run_at": "document_start"
+        }
+    ],
+    "update_url": "https://clients2.google.com/service/update2/crx"
+}

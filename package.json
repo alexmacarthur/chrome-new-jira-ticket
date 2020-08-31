@@ -1,0 +1,13 @@
+{
+  "name": "chrome-new-jira-ticket",
+  "version": "0.0.1",
+  "description": "Stubs some basic things into a new Jira ticket.",
+  "main": "new-jira-ticket.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {}
+}
